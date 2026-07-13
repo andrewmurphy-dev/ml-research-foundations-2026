@@ -1,0 +1,76 @@
+so a module is a python file , thats all 
+
+a package is a directory, a folder , that holds multiple python modules 
+
+
+my_project/
+│
+└── game/                  # 📦 This folder is the PACKAGE
+    ├── __init__.py        # Tells Python: "This folder is a package"
+    ├── graphics.py        # 📄 Module (file)
+    ├── audio.py           # 📄 Module (file)
+    └── physics.py         # 📄 Module (file)
+
+
+
+# Import a specific module from the package
+from game import graphics
+
+# Or import a specific function from a module inside the package
+from game.audio import play_laser_sound
+
+
+
+so where do we get import requests from and other packages?
+
+we get it from site-packages 
+
+but you must understand global vs isolated environments 
+
+
+the problem with global site packages 
+
+If you store every package directly in your OS's global site-packages folder,
+ you will eventually run into a "dependency hell" conflict.
+
+
+Project A might need requests version 2.20.0.Project B might need requests version 2.31.0.
+
+
+Because your OS only has one global site-packages folder per Python installation,
+ installing the version for Project B will overwrite the version for Project A, breaking your older code
+
+To fix this, Python developers use virtual environments. When you create a virtual environment 
+(like running python -m venv .venv), Python creates a brand new, isolated site-packages folder inside your project folder.
+
+
+my_project/
+├── .venv/                  # Isolated environment
+│   └── lib/
+│       └── python3.x/
+│           └── site-packages/   # 📦 requests gets installed HERE instead of the OS!
+├── main.py
+
+
+so how does python actually get the requests inside the isolated site packages environment?
+
+It gets there through Pip and the Internet.
+
+1.
+
+The Cloud: PyPI (The Warehouse)There is a massive public website called PyPI (Python Package Index).
+ It is the official online store/warehouse for Python code. Anyone can publish a package there. The creator of requests uploaded their code files there as a zipped archive.
+
+
+
+
+ 2. The Delivery Driver: pip
+
+
+
+ If your environment is NOT active: pip drives to your OS's global folder and unpacks the requests files into the global site-packages.
+ 
+ If your environment IS active: Your terminal's brain is temporarily hijacked. pip now looks at your project path. It drives directly into your project's .venv/ folder and unpacks the requests code files straight into your local site-packages
+
+
+ 

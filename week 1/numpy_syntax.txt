@@ -1,0 +1,67 @@
+so import the package 
+
+import numpy as np
+
+
+numpy = package
+np    = shorter name
+
+
+
+access an element 
+
+
+print(numbers[0])  # 10
+print(numbers[2])  # 30
+
+
+
+
+
+check the array structure 
+
+
+print(numbers.shape)
+print(numbers.ndim)
+print(numbers.size)
+print(numbers.dtype)
+
+
+
+shape  = size along each dimension
+ndim   = number of dimensions
+size   = total number of values
+dtype  = type stored inside the array
+
+
+
+
+
+for 2d NUMPY ARRAY 
+
+PLEASE REMEMBER THIS 
+
+(row, column)
+
+
+
+for example 
+
+
+2d_dimension = np.array([
+    [1,3,6],
+    [3,4,6]
+])
+
+
+
+
+          columns
+           0  1  2
+row 0  →   1  2  3
+row 1  →   4  5  6
+
+
+
+2d_dimension[1,2]
+

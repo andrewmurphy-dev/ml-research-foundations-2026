@@ -1,0 +1,154 @@
+so machine code is stored as bits 0 and 1 
+
+for example the CPU may conceptinally read something like 
+
+10110000 00011110
+
+Those bits encode an instruction plus its data.
+
+
+But humans usually do not read machine code as one huge stream like:
+
+010111101010001011101...
+
+
+
+We usually display the same bits in hexadecimal, because it is shorter:
+
+Binary:       10110000 00011110
+Hexadecimal:  B0 1E
+
+
+
+Or as assembly, which is more readable:
+
+mov al, 30
+
+
+
+The flow is:
+
+C source code
+    ↓ compiler
+assembly-like instructions
+    ↓ assembler/compiler
+machine-code bytes: 0s and 1s
+    ↓
+CPU executes them
+
+Important detail: the 0 and 1 are not tiny written numbers inside the processor. They represent physical electronic states, roughly:
+
+0 = low voltage
+1 = high voltage
+
+
+so why am i telling u this !?
+
+
+mask = numbers >= 30
+
+
+so there is alot of things happening here under the hood ! 
+
+NumPy performs that repetition using fast internal code that was already translated into instructions the CPU can run.
+
+
+You write one Python instruction
+        ↓
+NumPy runs its internal loop
+        ↓
+CPU compares every number
+        ↓
+NumPy returns:
+[False, False, True, True]
+
+
+
+NumPy still loops through the values, but the loop happens inside NumPy’s fast internal code instead of inside a Python for loop.
+
+
+
+
+
+
+
+
+Your Python code:
+mask = numbers >= 30
+        ↓
+Python calls numbers.__ge__(30)
+        ↓
+NumPy routes that to:
+np.greater_equal(numbers, 30)
+        ↓
+NumPy checks:
+- numbers shape: (4,)
+- numbers dtype: int64
+- 30 is a scalar
+        ↓
+NumPy broadcasts 30 conceptually:
+[30, 30, 30, 30]
+No real repeated array is created.
+        ↓
+NumPy allocates a new Boolean output array:
+[?, ?, ?, ?]
+        ↓
+Compiled native code walks through the input memory:
+10 >= 30 → False
+20 >= 30 → False
+30 >= 30 → True
+40 >= 30 → True
+        ↓
+The results are written into the output array:
+[False, False, True, True]
+        ↓
+NumPy returns that ndarray
+        ↓
+mask points to the returned Boolean array
+
+
+
+So:
+
+mask = numbers >= 30
+
+does not change numbers.
+
+It creates a new NumPy array:
+
+print(numbers)
+# [10 20 30 40]
+
+print(mask)
+# [False False  True  True]
+
+
+
+
+
+so the The >= operator calls NumPy’s elementwise comparison operation, essentially:
+
+This is a NumPy ufunc:
+
+ufunc = universal function
+
+A ufunc is designed to apply one operation across every element of an array.
+
+
+Under the hood:
+
+NumPy sees that numbers contains a specific type, such as int64.
+It prepares a Boolean output array of the same shape.
+The scalar 30 is logically reused for each comparison through broadcasting.
+Compiled C/native code iterates through the array’s memory.
+It writes each True or False directly into the result arr
+
+
+
+below is a python style version 
+
+
+result = []
+
+for number in numbers:
+    result.append(number >= 30)

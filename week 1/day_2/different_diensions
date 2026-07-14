@@ -1,0 +1,76 @@
+#for example 
+
+
+
+#the below
+
+
+import numpy as np
+
+matrix = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90],
+])
+
+
+
+#example 1 
+row = matrix[1]
+
+print(row)
+
+#[40 50 60]
+
+
+print(row.shape)
+
+#this has just 3 elements in 1D
+
+
+#example 2 
+
+
+col = matrix[1:2]
+
+print(row)
+print(col.shape)
+
+#this has 1 row , 3 colums , this is horizontal 
+
+#it basically slices it out 
+        #  0  1   2 
+# 1 row , [40, 50, 60] 
+
+
+
+
+
+col = matrix[:, 2]
+
+print(col)
+print(col.shape)
+
+#slice out column 2 
+
+# ([30, 60, 90])
+
+
+
+#confusion 
+
+#.shape applies for 2D formula , (rows,columns)
+
+
+#but for 1D array , (3,)    = 1D array with 3 elements
+
+#That does not mean 3 rows. It means the selected row has become a flat 1D array containing 3 elements.
+#hence its 1D 
+
+
+
+
+
+
+
+

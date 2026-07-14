@@ -1,0 +1,28 @@
+#what is this?
+
+
+#this is just an array of True , False values 
+
+
+#there is no syntax 
+
+
+#for example
+
+import numpy as np 
+
+
+numbers = np.array([10, 45, 66, 700])
+
+mask = numbers >= 30
+
+
+#so now we go 
+
+print(mask)
+print(mask.dtype)
+
+
+
+#so how does numpy do this?
+

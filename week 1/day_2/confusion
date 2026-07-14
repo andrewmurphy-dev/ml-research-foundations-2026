@@ -1,0 +1,9 @@
+#confusion 
+
+#.shape applies for 2D formula , (rows,columns)
+
+
+#but for 1D array , (3,)    = 1D array with 3 elements
+
+#That does not mean 3 rows. It means the selected row has become a flat 1D array containing 3 elements.
+#hence its 1D 

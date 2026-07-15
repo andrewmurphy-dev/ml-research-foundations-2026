@@ -1,0 +1,49 @@
+DAY 3 — AXES, AGGREGATION, RESHAPE AND TRANSPOSE
+
+Goal:
+Understand how NumPy operates across dimensions and how an array’s shape changes after each operation.
+
+Topics:
+1. Understand axis 0 and axis 1 in a 2D array.
+2. Use aggregation operations:
+   - sum
+   - mean
+   - min
+   - max
+   - standard deviation
+3. Predict the result and shape before running aggregation code.
+4. Understand keepdims=True.
+5. Reshape arrays without changing the number of elements.
+6. Transpose rows into columns and columns into rows.
+7. Recognize and debug invalid reshape operations.
+
+Rules:
+- For a 2D array, shape is (rows, columns).
+- axis=0 collapses the row axis and returns one result per column.
+- axis=1 collapses the column axis and returns one result per row.
+- reshape changes structure, not the underlying number of elements.
+- transpose swaps the axes of a 2D array.
+- Predict every output shape before running the code.
+
+Exercises:
+1. Calculate the total and mean of the entire array.
+2. Calculate one total for every column.
+3. Calculate one total for every row.
+4. Repeat aggregations with keepdims=True.
+5. Reshape a 1D array of 12 values into:
+   - (3, 4)
+   - (4, 3)
+   - (2, 6)
+6. Transpose a (2, 3) matrix into a (3, 2) matrix.
+7. Deliberately attempt an invalid reshape and explain why it fails.
+
+Definition of done:
+- I can explain exactly what axis=0 and axis=1 do.
+- I can predict the shape produced by each aggregation.
+- I understand why keepdims=True preserves a dimension.
+- I can reshape an array without changing its size.
+- I can explain what transpose changes.
+- I completed executable code and committed it to GitHub.
+
+Commit message:
+Complete NumPy axes aggregation reshape and transpose

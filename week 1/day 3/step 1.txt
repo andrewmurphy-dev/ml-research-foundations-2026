@@ -1,0 +1,86 @@
+import numpy as np 
+
+
+
+matrix = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90],
+])
+
+
+
+print(matrix.shape)
+
+#(3, 3) 
+
+#so 3, rows, 3 columns 
+
+
+
+###1
+
+#so axis in numpy refers to the structural level 
+
+#for a 2D array there are two levels ! 
+
+matrix = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+])
+
+
+#axis 0 → outer level
+[
+    [10, 20, 30],
+    [40, 50, 60]
+]
+
+
+#The outer level contains 2 rows.
+
+#axis 1 → inner level
+[10, 20, 30]
+
+#Each inner level contains 3 columns.
+
+
+###2
+
+#what is axis in numpy 
+
+#in 2D there are usually two axis !
+
+#x-axis: horizontal direction
+#y-axis: vertical direction
+
+
+#!!!!!!!
+#One important warning: NumPy’s axis=0 and axis=1 are programming conventions 
+#for array dimensions—not the same thing as the mathematical x-axis and y-axis
+
+
+
+#array.shape == (rows, columns)
+
+
+#axis=0 refers to the row dimension and operates downward across rows
+#axis=1 refers to the column dimension and operates across columns
+
+
+
+             axis 1
+          columns move across
+              →
+
+          10   20   30
+axis 0    40   50   60
+   ↓      70   80   90
+rows
+
+
+
+
+remember this !!!
+
+axis=x identifies the dimension, or nesting level, that NumPy operates across and collapses.

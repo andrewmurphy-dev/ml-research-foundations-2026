@@ -1,0 +1,49 @@
+so you need to know what a vector is and what a matrix is 
+
+a vector is usually a 1D array 
+
+a matrix is usually a 2D array
+
+
+shape tells you the dimensions 
+
+axis tells numpy to operate across ! 
+
+so a collection of elements in a 1D array is called , vector components 
+
+
+what is a vector ?
+
+
+is a quantity that has both a direction and a size.
+
+so axis in numpy refers to the structural level 
+
+for a 2D array there are two levels ! 
+
+matrix = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+])
+
+
+axis 0 → outer level
+[
+    [10, 20, 30],
+    [40, 50, 60]
+]
+
+
+The outer level contains 2 rows.
+
+axis 1 → inner level
+[10, 20, 30]
+
+Each inner level contains 3 columns.
+
+
+remember this !!!
+
+axis=x identifies the dimension, or nesting level, that NumPy operates across and collapses.
+
+

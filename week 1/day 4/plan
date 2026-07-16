@@ -1,0 +1,15 @@
+DAY 4 PLAN
+
+1. Predict aggregation values and output shapes.
+2. Learn keepdims=True.
+3. Reshape arrays without changing their total number of elements.
+4. Transpose rows and columns.
+5. Recognize and explain invalid reshape errors.
+6. Complete the remaining exercises.
+7. Commit the finished work to GitHub.
+
+Commit message:
+Complete NumPy shape control reshape and transpose
+
+
+

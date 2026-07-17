@@ -35,3 +35,42 @@ rows
 remember this !!!
 
 axis=x identifies the dimension, or nesting level, that NumPy operates across and collapses.
+
+
+
+is numpy related to linear algrebra !?
+
+linear algebra is the mathematics; NumPy is a Python tool used to perform that mathematics.
+
+the word dimension has two meanings 
+
+1. numpy dimension 
+
+--> how data is arranged 
+
+
+2. geometric dimension 
+
+In geometry, dimension means the number of directions or coordinates.
+
+This can represent a vector on a 2D graph:
+
+v = np.array([3, 2])
+
+
+3 is the x-coordinate.
+2 is the y-coordinate.
+
+
+This can represent a vector on a 2D graph:
+3 is the x-coordinate.
+2 is the y-coordinate.
+
+
+!!!!!!!!  It is a vector in 2D geometric space, but it is stored as a 1D NumPy array:   !!!!! 
+
+Remember
+NumPy dimension = how the data is arranged.
+Geometric dimension = how many coordinates or directions exist.
+A 2D vector can be stored in a 1D NumPy array.
+A 2D NumPy array is a table with rows and columns.

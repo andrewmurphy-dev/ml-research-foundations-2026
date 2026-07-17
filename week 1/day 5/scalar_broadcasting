@@ -1,0 +1,67 @@
+#a scalar is one single value 
+
+#for example 
+
+#5 
+
+import numpy as np
+
+#for an array --> numbers = np.array([10, 20, 30])
+
+
+numbers = np.array([10, 20, 30])
+print(numbers)
+#[10 20 30]
+
+result = numbers + 5
+print(result)
+#[15 25 35]
+
+
+
+
+#[10, 20, 30]
+# +5   +5   +5
+#--------------
+#[15, 25, 35]
+
+#the shape ?
+
+print(numbers.shape)
+print(result.shape)
+
+#(3,)
+#(3,)
+
+#it stays the same ! 
+
+#One scalar is broadcast across every element of the array.
+
+
+
+
+
+
+
+
+#PRACTICE !
+
+
+
+
+
+num = np.array([10, 50, 55])
+
+print(num)
+#[10 50 55]
+
+double = num * 5
+print(double)
+#[ 50 250 275]
+
+print(num.shape)
+print(double.shape)
+
+(3,)
+(3,)
+

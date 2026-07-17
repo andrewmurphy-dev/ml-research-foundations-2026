@@ -1,0 +1,71 @@
+#for this 
+import numpy as np
+
+matrix = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+])
+
+values = np.array([
+    [1],
+    [2],
+])
+
+
+print(matrix.shape)
+(2,3)
+
+print(values.shape)
+(2,1)
+
+print(values.ndim)
+2
+
+add = matrix + values 
+print(add)
+
+#[[11 21 31]
+# [42 52 62]]
+
+
+#[10, 20, 30] + 1 → [11, 21, 31]
+#[40, 50, 60] + 2 → [42, 52, 62]
+
+
+
+#REMEMBER THIS !!!
+
+
+#Two arrays are broadcast-compatible when NumPy compares their shapes from right to left and, 
+# for every pair of dimensions, the sizes are either equal or one of them is 1
+
+(2, 3) + (3,)   → works
+(2, 3) + (2, 1) → works
+(2, 3) + (2, 2) → fails
+
+#think of it visually 
+
+#The smaller shape must fit cleanly across the larger shape.
+#So it works.
+
+(2, 3) + (2, 1)
+(2, 3)
+(2, 1)
+#2 matches 2
+#1 can repeat into 3
+
+
+
+
+
+
+
+#Any missing dimensions on the left are treated as if they were 1.
+
+
+#for example 
+
+#(2, 3)
+#   (3)
+
+

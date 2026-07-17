@@ -1,0 +1,22 @@
+1. Scalar broadcasting
+   array + one number
+
+2. Broadcasting a 1D array across a 2D matrix
+   matching values with columns
+
+3. Broadcasting a column-shaped array
+   matching values with rows
+
+4. Predicting the resulting values and shapes
+   before running the code
+
+5. Broadcasting compatibility rules
+   when two shapes can work together
+
+6. Recognizing broadcasting errors
+   when the shapes are incompatible
+
+7. Vectorization
+   replacing Python loops with NumPy operations
+
+8. Small exercises and review

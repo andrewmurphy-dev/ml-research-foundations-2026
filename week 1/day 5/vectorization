@@ -1,0 +1,38 @@
+what is this ??
+
+
+Applying one operation to an entire array without writing the element-by-element Python loop yourself.
+
+
+
+#for example 
+
+
+[10, 20, 30] × 2
+
+#numpy treats it as 
+
+10 × 2
+20 × 2
+30 × 2
+
+
+[20, 40, 60]
+
+#instead of writing:
+
+for number in numbers:
+    ...
+
+
+
+you write:
+
+numbers * 2
+
+
+NumPy still processes the elements, but the looping happens internally in fast compiled code.
+
+
+REMEMBER THIS 
+Vectorization expresses repeated element operations as a single array operation.

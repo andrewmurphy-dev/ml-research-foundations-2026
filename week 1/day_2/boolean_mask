@@ -26,3 +26,6 @@ print(mask.dtype)
 
 #so how does numpy do this?
 
+
+#[False  True  True  True]
+#bool

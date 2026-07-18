@@ -1,0 +1,51 @@
+import numpy as np
+
+
+
+default_rng() 
+
+#this is a function call 
+#It creates and returns a NumPy random number generator object.
+#It does not generate a random number yet.
+
+
+
+
+np.random       → module
+default_rng     → function stored inside that module 
+default_rng is a function accessed from a module.
+
+
+rng = np.random.default_rng()
+        ↓
+creates a generator object
+        ↓
+rng points to that object
+
+#so remember this just creates the object!!!!
+
+
+
+
+
+#so now we need to generate numbers 
+
+rng = np.random.default_rng()
+number = rng.integers(1, 10)
+print(number)
+
+1 to 9
+1 is included. 10 is excluded.
+
+
+
+#remember is with a "s"
+
+integers
+
+integers
+
+integers
+
+integers
+

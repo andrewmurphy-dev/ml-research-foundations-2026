@@ -59,3 +59,7 @@ transposed = matrix.T
 
 #.T swaps the rows and columns of a 2D array.
 
+
+#so it flips 
+
+#remmeber this 

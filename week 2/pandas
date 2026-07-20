@@ -1,0 +1,35 @@
+what is pandas?
+
+this is a python library for working with table shaped data 
+
+python lets you:
+
+create tables
+select rows and columns
+filter data
+sort data
+find missing values
+calculate summaries
+load CSV files
+
+
+how do we import it ?
+
+
+import pandas as pd
+
+
+
+#pd is just a standard shorter name for pandas 
+
+
+connection to numpy ?
+
+
+
+A pandas table usually uses NumPy underneath, but pandas adds labels such as:
+
+column names: name, age, score
+row labels:   0, 1, 2
+
+

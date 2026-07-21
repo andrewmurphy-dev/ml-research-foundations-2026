@@ -1,0 +1,98 @@
+so heres a summery just to remmeber 
+
+
+without brackets 
+these are called attributes 
+Attributes store or describe information about the object:
+
+
+.shape 
+.index
+.dtypes
+.column 
+
+
+
+
+
+with brackets these are called methods , these perform a action 
+
+.head()
+.tail()
+
+
+
+
+VARIABLE
+students
+    │
+    │ points to
+    ▼
+┌───────────────────────────────┐
+│ OBJECT IN MEMORY              │
+│                               │
+│ 1. TYPE                       │──────► DataFrame class
+│    What kind of object is it? │
+│                               │
+│ 2. DATA / STATE               │
+│    The values it currently    │
+│    contains                   │
+│                               │
+│ 3. IDENTITY                   │
+│    This specific object       │
+└───────────────────────────────┘
+                 │
+                 │ its type provides
+                 ▼
+┌───────────────────────────────┐
+│ AVAILABLE FEATURES            │
+│                               │
+│ Attributes:                   │
+│ .shape                        │
+│ .columns                      │
+│ .dtypes                       │
+│                               │
+│ Methods:                      │
+│ .head()                       │
+│ .tail()                       │
+│ .sort_values()                │
+└───────────────────────────────┘
+
+
+
+
+
+What happens when you import pandas?
+
+
+
+pd
+ │
+ ▼
+pandas module object
+├── DataFrame
+├── Series
+├── read_csv()
+└── many other pandas tools
+
+
+
+
+students = pd.DataFrame(...)
+
+
+pd
+│
+└── .DataFrame
+        │
+        │ creates
+        ▼
+students → DataFrame object
+
+
+students is now a DataFrame object, it gets access to DataFrame attributes and methods:
+
+Only objects created as pandas objects receive pandas behavior:
+
+students = pd.DataFrame(...)
+

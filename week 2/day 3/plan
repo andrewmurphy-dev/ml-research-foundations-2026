@@ -1,0 +1,5 @@
+select columns and rows using:
+[ ]
+.loc
+.iloc
+

@@ -1,0 +1,10 @@
+1. What a missing value is
+2. Detect missing values with .isna()
+3. Count missing values
+4. Detect duplicate rows with .duplicated()
+5. Remove duplicates with .drop_duplicates()
+6. Count categories with .value_counts()
+7. Final mixed question
+
+
+

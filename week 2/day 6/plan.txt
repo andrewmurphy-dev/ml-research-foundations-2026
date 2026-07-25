@@ -1,0 +1,11 @@
+CSV basics
+→ rows, columns, commas, header
+
+read_csv()
+→ load file into a DataFrame
+→ print it
+→ inspect it briefly
+
+groupby
+→ split rows into groups
+→ calculate sum, mean, or count for each group

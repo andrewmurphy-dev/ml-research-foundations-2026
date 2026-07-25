@@ -1,0 +1,54 @@
+#what is a csv?
+
+#so its a plain text file 
+
+
+#for example
+
+
+#product,category,price
+#Keyboard,Accessories,80
+#Mouse,Accessories,40
+#Monitor,Displays,250
+
+
+
+#First line  → column names
+#Each next line → one row
+#Commas      → separate the columns
+
+
+
+
+
+
+
+#what is read_csv? 
+#read_csv is a function provided by pandas.
+
+
+#for example
+
+import pandas as pd
+
+students = pd.read_csv("/Users/andrewmurphy/ML Foundations/ml-research-foundations-2026/week 2/day 6/students.csv")
+
+
+print(students)
+
+
+#sales.csv file
+#      │
+#      │ read by pd.read_csv()
+#      ▼
+#DataFrame object
+#      │
+#      ▼
+#sales variable
+
+#result
+
+#    name  age  score
+#0   Andy   29     80
+#1  Sarah   25     92
+#2    Ken   31     75

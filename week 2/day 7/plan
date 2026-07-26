@@ -1,0 +1,15 @@
+Series and DataFrame
+creating DataFrames
+head / tail
+shape / columns / index / dtypes
+column and row selection
+loc / iloc
+Boolean filtering
+sorting
+missing values
+duplicates
+value_counts
+read_csv
+groupby basics
+
+

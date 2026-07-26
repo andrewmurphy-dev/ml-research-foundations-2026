@@ -55,3 +55,7 @@ print(products[(products["price"] > 100) | (products["stock"] < 10)])
 #   product  price  stock
 #2  Monitor    250      7
 #3  Headset     65      5
+
+
+
+

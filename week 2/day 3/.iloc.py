@@ -24,3 +24,8 @@ print(students.loc["a"])
 
 print(students.iloc[0])
 
+
+#only selecting by position 
+
+
+#use print(students.index) to find index

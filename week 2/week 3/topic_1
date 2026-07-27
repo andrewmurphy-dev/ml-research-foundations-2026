@@ -1,0 +1,104 @@
+#question 1 
+
+import pandas as pd
+
+employees = pd.DataFrame({"name": ["Andy", "Sarah", "Ken", "Emma"],
+                          "department": ["IT", "HR", "IT", "Finance"],
+                          "salary": [3200, 2900, 3500, 3100]})
+
+
+print(employees)
+
+
+
+#question 2
+
+print(employees.head(2))
+
+
+
+#question 3 
+
+print(employees.tail(2))
+
+
+#question 4 
+
+
+print(employees.columns)
+
+
+
+#question 5 
+
+print(employees.index)
+
+
+#question 6 
+
+
+print(employees.dtypes)
+
+
+#question 7 
+
+print(employees["salary"])
+
+
+#question 8 
+
+#Using employees, select and print both the name and department columns.
+
+#print(employees["name"]["department"])
+
+#wrong
+
+
+print(employees[["name", "department"]])
+
+
+#question 9 
+
+print(employees[["department", "salary"]])
+
+
+
+
+#question 10 
+
+print(employees[["name", "salary"]])
+
+
+#question 11 
+
+print(employees[["salary", "department", "name"]])
+
+
+#question 12 
+
+print(employees[["department","name"]])
+
+
+#question 13 
+
+print(employees[["name", "salary", "department"]])
+
+
+
+#question 14 
+
+print(employees[["salary", "name"]])
+
+
+
+#question 15 
+
+print(employees.iloc[1, 2])
+
+
+#question 16
+
+print(employees.iloc[3, 0])
+
+
+#question 17

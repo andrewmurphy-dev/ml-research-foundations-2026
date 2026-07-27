@@ -1,0 +1,13 @@
+.head()
+.tail()
+.columns
+.index
+.dtypes
+
+df["column"]
+df[["column1", "column2"]]
+
+.iloc[]
+
+
+

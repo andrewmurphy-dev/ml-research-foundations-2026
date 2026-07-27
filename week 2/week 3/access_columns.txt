@@ -1,0 +1,27 @@
+
+
+print(employees["salary"])
+
+
+
+print(employees["name"]["department"])
+
+this is not how you access two colmns 
+
+#remember double [[]]
+
+
+outer [ ]  → select from the DataFrame
+inner [ ]  → list of column names
+
+
+
+
+employees.iloc[row_position, column_position]
+
+
+
+
+print(employees.iloc[1, 2])
+
+we sue aquare brackets for iloc

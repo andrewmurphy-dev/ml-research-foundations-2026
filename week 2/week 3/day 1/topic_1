@@ -100,5 +100,3 @@ print(employees.iloc[1, 2])
 
 print(employees.iloc[3, 0])
 
-
-#question 17

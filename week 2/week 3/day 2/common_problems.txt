@@ -1,0 +1,109 @@
+i forget sorting 
+
+its sort_values 
+
+result = products.sort_values("price")
+
+print(result)
+
+
+the defaule is ASC 
+
+
+i forgot this though 
+
+
+sort the rows by price from highest to lowest.
+
+
+ascending
+
+
+
+
+
+
+
+
+
+
+
+#question 18
+
+
+`products["price"]` by itself **does select only the `price` column**.
+
+But your full code is:
+
+```python
+products[products["price"] > 60]
+```
+
+There are **two separate bracket operations**:
+
+```python
+products["price"]
+```
+
+Selects the `price` column:
+
+```text
+0     80
+1     40
+2    250
+3     65
+4    125
+```
+
+Then:
+
+```python
+products["price"] > 60
+```
+
+creates a Boolean Series:
+
+```text
+0     True
+1    False
+2     True
+3     True
+4     True
+```
+
+Finally, the outer part:
+
+```python
+products[boolean_series]
+```
+
+means:
+
+> Return the **entire rows** wherever the Boolean value is `True`.
+
+That is why you see all columns for the matching rows.
+
+```text
+products[ products["price"] > 60 ]
+   ↑
+return full rows
+```
+
+To return only the matching price values:
+
+```python
+print(products.loc[products["price"] > 60, "price"])
+```
+
+For Question 18, returning full rows is intended:
+
+```python
+result = products[
+    (products["price"] > 60) &
+    (products["stock"] < 20)
+]
+
+result = result.sort_values("price", ascending=False)
+
+print(result)
+```

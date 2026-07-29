@@ -1,0 +1,5 @@
+.isna()
+.isna().sum()
+.duplicated()
+.drop_duplicates()
+.value_counts()

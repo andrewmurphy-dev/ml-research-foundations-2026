@@ -1,0 +1,71 @@
+how do we do a boolean when working with dataframes?
+
+we use 
+
+.isna()
+
+
+.isna() checks every value:
+
+True  → missing
+False → not missing
+
+
+
+   order_id  status  total
+0     False   False  False
+1     False   False   True
+2     False   False  False
+3     False   False  False
+4     False   False   True
+
+
+
+
+
+Using orders, print a Boolean Series showing which rows are duplicates.
+
+
+print(orders.duplicated())
+
+
+False → row is not a duplicate
+True  → row repeats an earlier row
+
+
+duplicated()
+→ checks each original row
+→ returns one True/False value per row
+→ therefore the result is a Boolean Series
+
+
+
+
+
+print(orders.drop_duplicates())
+
+
+.drop_duplicates() removes repeated rows and returns a cleaned DataFrame.
+
+
+
+
+
+
+
+Using orders, count how many times each value appears in the status column.
+
+
+print(orders["status"].value_counts())
+
+
+value_counts() counts how many times each unique value appears in the selected Series.
+
+
+
+
+
+
+To count missing values in each column, use:
+
+print(orders.isna().sum())

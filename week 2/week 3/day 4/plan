@@ -1,0 +1,8 @@
+today we need to really revise day 3 problems 
+
+.isna()
+.isna().sum()
+.duplicated()
+.duplicated().sum()
+.drop_duplicates()
+.value_counts()

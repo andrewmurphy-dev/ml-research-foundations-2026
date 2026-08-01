@@ -1,0 +1,18 @@
+1. Matrix multiplication
+   - when shapes are compatible
+   - calculate with @
+   - predict the result shape
+
+2. Transpose
+   - one quick review question only
+   - use it when it helps matrix multiplication
+
+3. Linear combinations
+   - multiply vectors by numbers
+   - add the results together
+
+4. Norms
+   - understand vector length
+   - calculate with np.linalg.norm()
+
+5. One mixed coding question

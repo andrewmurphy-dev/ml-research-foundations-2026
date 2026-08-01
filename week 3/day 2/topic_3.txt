@@ -1,0 +1,66 @@
+#A norm is just the length of a vector.
+
+#we use np.linalg.norm(vector)
+
+#linal g . norm
+
+
+#for example
+
+import numpy as np
+
+
+
+vector = np.array([3, 4])
+len = np.linalg.norm(vector)
+print(len)
+
+#5.0
+
+#how is it 5.0 thoigh ?
+
+#Because the norm uses the Pythagorean theorem.
+
+#Pythagorean theorem is a rule for finding the longest side of a right triangle.
+
+#A right triangle has one 90° corner.
+
+#for example for a vector 
+
+
+[3, 4]
+
+        ●
+        |\
+      4 | \  length
+        |  \
+        |___\
+          3
+
+
+a² + b² = c²
+
+formula for pythangorim above 
+
+3² + 4² = length²
+
+9 + 16 = length²
+
+25 = length²
+
+length = √25
+
+length = 5
+
+To undo the square, take the square root:
+
+length = √25
+length = 5
+
+
+why do we use square root?
+
+Because at that point we have:
+
+length² = 25
+

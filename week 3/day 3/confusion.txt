@@ -1,0 +1,9 @@
+so in python 
+
+f(x) = x² + 3
+
+
+what is x² written as ?
+
+
+x ** 2

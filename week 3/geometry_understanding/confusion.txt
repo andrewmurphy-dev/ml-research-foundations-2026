@@ -1,0 +1,127 @@
+1. the x-axis, y-axis
+
+x-axis → horizontal
+y-axis → vertical
+
+
+this is written as;
+(x, y)
+
+for example
+
+(2, 5)
+
+this means:
+
+move 2 across
+move 5 up
+
+
+
+2. the function creates a line 
+
+for example 
+
+
+we choose the x value 
+
+we take the x value to find y 
+
+
+
+y = 2(1) + 1
+y = 3
+
+
+
+this gives 
+
+x = 1
+y = 3
+
+
+so the point is;
+
+(1, 3)
+
+
+
+the pattern is:
+choose x → calculate y → make the point (x, y)
+
+
+
+
+
+#we can plot this 
+
+
+y
+↑
+7              ● (3, 7)
+6            /
+5         ● (2, 5)
+4       /
+3    ● (1, 3)
+2
+1
+0 ─────────────────→ x
+
+
+
+
+
+3. why do we always form a straight line ?
+
+
+y = 2(1) + 1
+y = 3
+
+
+Because every time x increases by 1, the rule adds another 2 to y
+
+function → produces x and y pairs
+x and y pair → creates a point
+many points → reveal the line
+
+
+
+
+
+
+
+
+4. where the vector appears here ?
+
+So the line is not a vector.
+
+vector → an arrow showing movement between two points
+
+But a vector can show the direction of the line.
+
+
+
+
+
+5. Where the Pythagorean theorem appears
+
+
+movement [1, 2] creates a right triangle:
+
+
+        B ●
+          |\
+        2 | \ diagonal length
+          |  \
+        A ●───
+            1
+
+
+point A → point B
+       creates a movement vector
+
+movement vector → has horizontal and vertical changes
+
+slope → compares those changes
+
+Pythagorean theorem → calculates the vector’s total length

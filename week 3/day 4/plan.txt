@@ -1,0 +1,9 @@
+1. Quick ordinary derivative recap
+2. What a partial derivative is
+3. Change x while keeping y fixed
+4. Change y while keeping x fixed
+5. Several small coding questions
+6. Combine both partial derivatives into a gradient
+7. One final mixed coding question
+
+

@@ -104,3 +104,12 @@ You are asking where slope = 2 * weight comes from.It is a math rule called the 
 It is a math rule called the "Power Rule"
 
 
+In computer science and machine learning, weight is a numerical variable stored in computer memory
+
+It is called an "internal setting" because it is a parameter owned and modified directly by the algorithm, not by the user.Here is the exact technical breakdown of how it works in your code:1. The Componentsx (Input): External data fed into the program. It is constant during calculation.weight
+ 
+ 
+ (Parameter): A floating-point number stored in memory that acts as a coefficient.prediction (Output): The product of the input and the weight.
+
+
+ We multiply by the weight because it is the mathematically simplest way to scale an input up or down to match a target output.

@@ -1,0 +1,7 @@
+1. Prediction
+2. Actual value
+3. Loss
+4. How a weight affects prediction
+5. Gradient descent
+
+

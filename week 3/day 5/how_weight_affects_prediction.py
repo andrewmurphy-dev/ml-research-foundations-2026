@@ -67,3 +67,6 @@ print(gradient)
 gradient = (loss(weight + h) - loss(weight)) / h
 
 
+
+#so its a derivative not a partial deriviate 
+

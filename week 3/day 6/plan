@@ -1,0 +1,32 @@
+1. Quick recap
+   prediction, actual, loss, weight, gradient
+
+2. Weight update
+   use the gradient to change the weight
+
+3. Learning rate
+   control how big the weight change is
+
+4. One gradient-descent step
+   calculate:
+   old prediction
+   old loss
+   gradient
+   new weight
+   new prediction
+   new loss
+
+5. Repeat the process
+   use a small loop to update the weight several times
+
+6. Watch the model improve
+   prediction moves toward the actual value
+   loss becomes smaller
+
+7. Coding practice
+   several questions, one at a time
+
+8. Final mixed question
+   prediction → loss → gradient → weight update
+
+   

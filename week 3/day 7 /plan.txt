@@ -1,0 +1,8 @@
+Questions 1–5: functions, slopes, and ordinary derivatives
+Questions 6–9: partial derivatives and gradients
+Questions 10–13: prediction, actual value, and loss
+Questions 14–17: positive/negative gradients
+Questions 18–21: learning rate and weight updates
+Questions 22–24: repeated gradient-descent steps and loops
+Question 25: full mixed challenge from prediction to updated weight
+

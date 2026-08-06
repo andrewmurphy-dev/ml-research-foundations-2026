@@ -1,0 +1,43 @@
+
+partial_y = (f(y + h, x) - f(y, x))/ h
+
+
+
+
+#A gradient stores the partial derivatives together in one vector.
+#partial_x + partial_y stored together → gradient vector
+
+import numpy as np
+
+partial_x = 4.001
+partial_y = 8.001
+
+gradient = np.array([partial_x, partial_y])
+
+print(gradient)
+
+np.dot() multiplies the two values, giving one number. We do not want to combine them mathematically.
+
+What is a Gradient?A gradient measures how much a value changes over a specific distance.
+
+In simple terms, it is a measure of steepness. In everyday life, you encounter gradients when looking at the slope of a hill or a wheelchair ramp.
+
+What is a Gradient Vector?When you move from a flat 2D line to a 3D surface (or higher dimensions), 
+
+the gradient becomes a gradient vector.Instead of just one number, it is a list of numbers (a vector)
+
+ that contains the slope for every single direction you can move. It is represented by the symbol \(\nabla \)
+
+
+
+ #result 
+
+
+ import numpy as np
+
+partial_x = 4.001
+partial_y = 8.001
+
+gradient = np.array([partial_x, partial_y])
+
+print(gradient)

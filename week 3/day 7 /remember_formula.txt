@@ -1,0 +1,11 @@
+loss = (prediction - actual) ** 2
+
+
+
+prediction = x * weight
+
+
+
+
+
+new_weight = weight - learning_rate * gradient

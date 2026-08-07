@@ -1,0 +1,44 @@
+#for indexing we use "," not : 
+
+
+data[row, column]
+
+
+
+#for slicing one row 
+
+
+data = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+])
+
+
+#slice one row 
+
+
+print(data[:0])
+
+#this is wrong 
+
+#use this 
+print(data[1])
+
+
+
+#question 9 
+
+
+
+data = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+])
+
+
+print(data[1, 1:])
+
+
+#: = all rows

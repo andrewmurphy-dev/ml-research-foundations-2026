@@ -1,0 +1,8 @@
+Q1–4   Mean
+Q5–8   Median
+Q9–12  Variance
+Q13–16 Standard deviation
+Q17–19 Compare center + spread
+Q20    Full mixed Day 1 challenge
+
+

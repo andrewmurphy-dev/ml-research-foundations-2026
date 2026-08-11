@@ -1,0 +1,25 @@
+Topic 1 — Basic probability
+
+What probability actually means
+0 to 1
+favourable outcomes / total possible outcomes
+simple probability calculations in Python
+
+Topic 2 — Conditional probability
+
+What “given that” means
+How new information changes a probability
+Simple examples first, then code
+
+Topic 3 — Independence
+
+What it means for two events to be independent
+How to tell when one event does not affect another
+Compare independent vs dependent events
+
+Topic 4 — Bayes intuition
+
+Start with an initial probability
+Receive new evidence
+Update the probability
+Understand the idea before touching any formula

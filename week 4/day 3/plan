@@ -1,0 +1,32 @@
+Topic 1 — What a distribution is
+
+What “distribution” means
+How values are spread across possible outcomes
+Why this matters in ML
+
+Topic 2 — Uniform distribution
+
+Every outcome has roughly equal chance
+Example: fair die
+Generate values with NumPy
+
+Topic 3 — Normal distribution
+
+Bell-shaped distribution
+Most values near the mean
+Fewer values far away
+Use np.random.normal()
+
+Topic 4 — Simulations
+
+What a simulation is
+Use NumPy to imitate repeated random events
+Example: roll a die 1000 times
+Compare what actually happened with the expected probability
+
+Topic 5 — Random generator + seed
+
+Quick refresher only
+Why a seed gives reproducible random results
+Use NumPy’s random generato
+

@@ -1,0 +1,50 @@
+#Bayes Intuition
+
+
+#Bayes is about updating a probability when you receive new evidence.
+
+#After seeing some evidence, what should my new probability be?
+
+
+A = machine is faulty
+B = warning light appears
+
+
+P(faulty | warning)
+=
+P(warning | faulty) × P(faulty)
+────────────────────────────────
+          P(warning)
+
+
+
+
+The | symbol means “given that.”
+
+
+#so 
+
+P(faulty | warning)
+
+probability the machine is faulty GIVEN that we saw a warning light.
+
+
+faulty = machine has a problem
+not_faulty = machine is working normally
+warning = warning light appears
+
+P means probability.
+
+
+P(faulty)
+
+means:
+
+probability that the machine is faulty
+
+
+P = probability
+| = given that
+
+faulty = machine has a problem
+warning = warning light appears

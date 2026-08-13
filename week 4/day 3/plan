@@ -24,9 +24,4 @@ Use NumPy to imitate repeated random events
 Example: roll a die 1000 times
 Compare what actually happened with the expected probability
 
-Topic 5 — Random generator + seed
-
-Quick refresher only
-Why a seed gives reproducible random results
-Use NumPy’s random generato
 

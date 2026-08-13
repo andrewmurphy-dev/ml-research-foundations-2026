@@ -1,25 +1,22 @@
-#distribution 
+# Distribution
+
+# A distribution tells us:
+# which values can happen and how often/how likely each value is.
 
 
+# Uniform Distribution
 
-#A distribution tells us:
+# A uniform distribution means every possible outcome
+# has the same probability.
 
-#which values can happen, and how often / how likely each value is
+# Example: fair die
 
-#Example: fair six-sided die.
-
-#Possible values:
-
-#1  2  3  4  5  6
-
-#Each one has the same probability:
-
-#1 → 1/6
-#2 → 1/6
-#3 → 1/6
-#4 → 1/6
-#5 → 1/6
-#6 → 1/6
+# 1 → 1/6
+# 2 → 1/6
+# 3 → 1/6
+# 4 → 1/6
+# 5 → 1/6
+# 6 → 1/6
 
 #That pattern of probabilities is the distribution.
 
@@ -34,7 +31,7 @@
 #5 appears 1 time
 
 
-#istribution = how values are spread across the possible results
+#distribution = how values are spread across the possible results
 
 
 

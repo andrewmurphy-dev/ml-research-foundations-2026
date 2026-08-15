@@ -1,0 +1,25 @@
+Topic 1 — What bootstrap means
+
+Topic 2 — Sampling with replacement
+
+Topic 3 — Bootstrap a mean
+
+Topic 4 — Repeat bootstrap many times
+
+Topic 5 — Bootstrap confidence interval
+
+Topic 6 — Why this matters for ML model metrics
+
+
+
+original sample
+      ↓
+randomly resample from it
+      ↓
+calculate statistic
+      ↓
+repeat many times
+      ↓
+see how much the statistic changes
+
+

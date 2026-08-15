@@ -1,0 +1,23 @@
+what does arange do?
+
+np.arange()
+
+np.arange() creates a NumPy array of numbers in a sequence.
+
+population = np.arange(1, 6)
+
+print(population)
+
+
+[1 2 3 4 5]
+
+Important: the second number is excluded.
+
+so 
+
+np.arange(1, 101)
+
+1, 2, 3, ... 100
+
+np.arange(start, stop)
+

@@ -1,0 +1,52 @@
+# Day 4 — Sampling Variability, Standard Error, Confidence Intervals
+
+## Topic 1 — Sample
+
+* Population = the full group
+* Sample = a smaller group taken from the population
+* We use samples because we usually cannot measure everything
+
+## Topic 2 — Sampling Variability
+
+* Different samples can give different results
+* Sample means can change from sample to sample
+* Small samples usually give more unstable results
+
+## Topic 3 — Standard Error
+
+* Standard deviation = spread of individual values
+* Standard error = how much the sample mean tends to change between samples
+
+## Topic 4 — Confidence Interval
+
+* A confidence interval gives a range around an estimate
+* Example:
+
+```text
+mean = 50
+confidence interval = 47 to 53
+```
+
+* It helps show the uncertainty around the estimate
+
+## Topic 5 — NumPy Simulation
+
+```text
+take sample
+↓
+calculate mean
+↓
+take another sample
+↓
+calculate mean
+↓
+compare results
+```
+
+## Main Idea
+
+```text
+A result from a sample is an estimate.
+
+Different samples can give different answers.
+```

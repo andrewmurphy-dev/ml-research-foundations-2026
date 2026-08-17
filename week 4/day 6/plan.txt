@@ -1,0 +1,34 @@
+# WEEK 4 — DAYS 6 + 7
+
+# DAY 6 — Correlation, Confounding, Effect Size
+
+## Topic 1 — Correlation
+# What correlation means
+# Positive correlation
+# Negative correlation
+# No correlation
+# Calculate correlation in Python with NumPy
+
+## Topic 2 — Correlation Does Not Mean Causation
+# Two variables moving together does not prove
+# that one variable caused the other
+
+## Topic 3 — Confounding
+# What a confounding variable is
+# How a third variable can affect two other variables
+# Why correlation can sometimes be misleading
+
+## Topic 4 — Effect Size
+# What effect size means
+# Difference between:
+# "there is a difference"
+# and
+# "the difference is actually large enough to matter"
+
+## Topic 5 — Cautious Interpretation
+# Do not treat one result as proof
+# Consider sample size
+# Consider uncertainty
+# Consider confounding
+# Consider how large the effect actually is
+

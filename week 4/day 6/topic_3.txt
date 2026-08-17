@@ -1,0 +1,24 @@
+#A confounding variable is a third variable that affects both things you are comparing.
+
+#for example
+
+ice cream sales ↑
+sunburn cases   ↑
+
+
+But the third variable is:
+
+hot sunny weather
+
+Because hot weather causes:
+
+more ice cream sales
+more sunburn
+
+So:
+
+ice cream sales ← hot weather → sunburn
+
+
+ice cream sales ← hot weather → sunburn
+

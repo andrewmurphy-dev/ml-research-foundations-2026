@@ -1,0 +1,153 @@
+
+
+#question 5 
+
+#A fair die has 6 possible outcomes.
+#What is the probability of rolling a 4?
+
+probability = 4/6 
+
+print(probability)
+
+
+not quite ,
+
+its 1/6
+
+Question 8 / 20
+
+You flip a fair coin twice.
+
+What is the probability of getting:
+
+Heads AND Heads
+
+Write the calculation in Python and print the probability.
+
+
+Bayes intuition is:
+
+starting probability
+↓
+new evidence
+↓
+updated probability
+
+If the warning light is much more common when the machine is faulty, seeing the warning makes “faulty” more likely.
+
+Which one is a uniform distribution?
+
+A. Every possible outcome has the same probability
+B. Values near the mean are more common
+C. One outcome is much more likely than the others
+
+
+
+A uniform distribution means:
+
+every possible outcome has the same probability
+
+Example: a fair die.
+
+A normal distribution is the one where values near the mean are more common.
+
+
+rng = np.random.default_rng()
+
+result = rng.normal(
+    loc=50,
+    scale=10
+    size=1000  
+)
+
+print(np.mean(result))
+
+
+
+rng = np.random.default_rng()
+
+rolls = rng.integers(1, 7, size=1000)
+
+print(rolls)
+
+
+#Now we can count how many 6s appeared:
+
+sixes = np.sum(rolls == 6)
+
+print(sixes)
+
+
+Using those 1000 die rolls, calculate the observed probability of rolling a 6.
+
+Then print the percentage.
+
+probability = sixes / 1000
+percentage = probability * 100
+
+print(percentage)
+
+
+
+
+
+Question 15 / 20
+
+Two studies have the same standard deviation:
+
+Study A sample size = 25
+Study B sample size = 400
+
+Which study should have the smaller standard error?
+
+A or B?
+
+#B 
+#standard error = standard deviation / √sample size
+
+
+
+Both studies have the same standard deviation.
+
+So we can call that unknown standard deviation S.
+
+Then:
+
+Study A:
+SE = S / √25
+SE = S / 5
+
+
+Study B:
+SE = S / √400
+SE = S / 20
+
+Since:
+
+S / 20 < S / 5
+
+Study B has the smaller standard error.
+
+So the question was only asking you to compare them, not calculate the exact standard error.
+
+If I wanted you to calculate an actual number, I would need to give you something like:
+
+standard deviation = 10
+sample size = 400
+
+Then:
+
+SE = 10 / √400
+SE = 0.5
+
+So you were right to question it: you cannot calculate the exact standard error unless the standard deviation is given or you have the data to calculate it.
+
+i dotn understand man makes 0 sense how is 20 smaller than 5 
+
+You’re right: 20 is not smaller than 5.
+
+The point is:
+
+S / 20  is smaller than  S / 5
+
+because dividing by a bigger number makes the result smaller.

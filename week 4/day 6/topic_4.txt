@@ -1,0 +1,43 @@
+#effect size 
+
+
+Effect size tells us:
+
+how big the difference or relationship actually is.
+
+Example:
+
+Group A average score = 80
+Group B average score = 81
+
+There is a difference:
+
+81 - 80 = 1
+
+But that difference is tiny.
+
+Now:
+
+Group A average score = 80
+Group B average score = 95
+
+Difference:
+
+95 - 80 = 15
+
+That is a much larger effect.
+
+So the idea is:
+
+statistical result
+→ tells us there IS a difference
+
+
+effect size
+→ tells us HOW BIG the difference is
+
+In ML, this matters because a model improvement like:
+
+accuracy: 90.0% → 90.1%
+
+might technically be an improvement, but the effect is tiny.

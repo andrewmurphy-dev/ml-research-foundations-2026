@@ -1,0 +1,115 @@
+# WEEK 4 — DAY 7 REVISION
+
+# Goal:
+# Review the full week with 20 questions.
+# Questions are asked ONE AT A TIME.
+# Mostly coding, with short reasoning questions where needed.
+# No new topics.
+
+
+# QUESTIONS 1–4
+# Mean, Median, Variance, Standard Deviation
+
+# Q1  Calculate mean
+# Q2  Calculate median
+# Q3  Calculate variance
+# Q4  Calculate standard deviation and interpret it
+
+
+# QUESTIONS 5–7
+# Probability
+
+# Q5  Basic probability
+# Q6  Convert probability to percentage
+# Q7  Conditional probability
+
+
+# QUESTIONS 8–9
+# Independence + Bayes
+
+# Q8  Independent events
+# Q9  Bayes intuition / update probability from evidence
+
+
+# QUESTIONS 10–11
+# Distributions
+
+# Q10 Uniform distribution
+# Q11 Normal distribution with NumPy
+
+
+# QUESTIONS 12–13
+# Simulations
+
+# Q12 Simulate repeated die / coin outcomes
+# Q13 Calculate observed probability from simulation
+
+
+# QUESTIONS 14–15
+# Sampling
+
+# Q14 Population vs sample + sampling variability
+# Q15 Standard error
+
+
+# QUESTIONS 16–18
+# Bootstrap
+
+# Q16 Create bootstrap samples with replacement
+# Q17 Store bootstrap means and calculate standard error
+# Q18 Calculate a 95% bootstrap confidence interval
+
+
+# QUESTIONS 19–20
+# Correlation + Interpretation
+
+# Q19 Calculate correlation with np.corrcoef()
+# Q20 Mixed reasoning:
+#     correlation
+#     causation
+#     confounding
+#     effect size
+#     uncertainty
+
+
+# FINAL WEEK 4 CHECK
+
+# By the end I should understand:
+
+# Mean / median = center
+
+# Variance / standard deviation = spread
+
+# Probability = how likely something is
+
+# Conditional probability = probability given new information
+
+# Bayes = update probability using evidence
+
+# Distribution = how possible values/probabilities are arranged
+
+# Sampling variability = different samples give different results
+
+# Standard error = how much sample means tend to vary
+
+# Bootstrap = repeatedly resample existing data with replacement
+
+# Confidence interval = range showing uncertainty around an estimate
+
+# Correlation = two variables tend to change together
+
+# Correlation does NOT automatically mean causation
+
+# Confounding = a third variable influences the relationship
+
+# Effect size = how large the difference or relationship actually is
+
+
+# WEEK 4 MAIN LESSON
+
+# A score calculated from a sample is an estimate,
+# not permanent proof.
+
+# Small samples can produce unstable results.
+
+# We should measure uncertainty before trusting ML results.

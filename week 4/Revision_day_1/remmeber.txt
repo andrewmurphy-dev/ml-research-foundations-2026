@@ -1,0 +1,9 @@
+rng.choice()
+→ data
+→ size
+→ replace
+
+rng.normal()
+→ loc
+→ scale
+→ size

@@ -1,0 +1,174 @@
+# WEEK 4 — FINAL HARD-DRILL REVISION PLAN
+
+# GOAL:
+# Make the weak Week 4 topics automatic through repetition.
+# No new topics.
+# One question at a time.
+# No hints unless requested.
+
+
+# ROUND 1 — CORE RECALL
+
+# Question 1
+# Mean
+
+# Question 2
+# Median
+
+# Question 3
+# Variance
+
+# Question 4
+# Standard deviation
+
+# Question 5
+# Basic probability
+
+# Question 6
+# Convert probability to percentage
+
+# Question 7
+# Conditional probability
+
+# Question 8
+# Independent events
+
+# Question 9
+# Bayes intuition
+
+# Question 10
+# Uniform distribution vs normal distribution
+
+# Question 11
+# Generate a normal distribution using NumPy
+
+# Question 12
+# Simulate random events and count outcomes
+
+# Question 13
+# Calculate observed probability from a simulation
+
+# Question 14
+# Population vs sample
+
+# Question 15
+# Standard error
+
+# Question 16
+# Create a bootstrap sample with replacement
+
+# Question 17
+# Create many bootstrap samples
+# Store bootstrap means
+# Calculate bootstrap standard error
+
+# Question 18
+# Calculate a 95% bootstrap confidence interval
+
+
+# ROUND 2 — HARD DRILL ALL MISTAKES
+
+# Every question answered incorrectly comes back again.
+
+# Same concept
+# Different numbers
+# Different wording
+# No reminder of which method to use
+
+# If the same concept is wrong twice:
+# Do 3 extra questions on that exact concept.
+
+# Keep drilling until it can be solved independently.
+
+
+# MAIN WEAK AREAS TO TARGET HARD
+
+# Basic probability
+# favourable outcomes / total outcomes
+
+# Conditional probability
+# only use the group given in the condition
+
+# Independent events
+# probability of A AND B
+# multiply the probabilities
+
+# Bayes intuition
+# starting probability
+# new evidence
+# updated probability
+
+# Uniform distribution
+# all possible outcomes have the same probability
+
+# Normal distribution
+# values near the mean occur more often
+
+# Standard error
+# measures how much sample means tend to vary
+# larger sample size → smaller standard error
+
+# Bootstrap
+# repeatedly resample existing data
+# use replace=True
+
+# Bootstrap standard error
+# calculate many bootstrap means
+# find the standard deviation of those means
+
+# 95% bootstrap confidence interval
+# lower = 2.5th percentile
+# upper = 97.5th percentile
+
+
+# ROUND 3 — MIXED RECALL
+
+# Problems will NOT say which concept to use.
+
+# Must independently decide whether the problem needs:
+
+# mean
+# median
+# variance
+# standard deviation
+# probability
+# conditional probability
+# independent probability
+# Bayes
+# uniform distribution
+# normal distribution
+# simulation
+# sampling
+# standard error
+# bootstrap
+# confidence interval
+
+
+# FINAL TEST
+
+# One larger Week 4 coding problem.
+
+# Must:
+# identify the correct methods
+# write the code independently
+# interpret the result
+
+
+# RULES
+
+# One question at a time.
+# No hints unless requested.
+# Write code from memory.
+# Mistakes are repeated later.
+# No new topics.
+# Do not stop at 18 if weak areas remain.
+# Keep drilling until the important concepts can be recalled without help.
+
+
+# END GOAL
+
+# Do not just recognize Week 4 concepts.
+
+# Be able to see a problem,
+# identify what concept is needed,
+# and write the solution independently.

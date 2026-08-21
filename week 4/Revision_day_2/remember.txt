@@ -1,0 +1,33 @@
+#numerical dirivative 
+
+please remember 
+
+
+x = 
+h = 
+
+result = (f(x + h) - f(x)) / h
+
+what does this do?
+
+Move x forward by a tiny amount, see how much the function output changes, then divide by how far you moved.
+
+
+So we compare:
+
+f(4.001)
+with
+f(4)
+
+why is this important ?
+
+it tells us how sensitive the output is to a tiny change in the input.
+
+derivative tells you:
+
+how fast something is changing at a specific point.
+
+
+prediction = x * weight
+loss = (prediction - actual) ** 2
+

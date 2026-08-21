@@ -1,0 +1,54 @@
+# WEEK 3 — HARD REVISION PLAN
+
+# 20 questions total
+# One question at a time
+# No hints unless asked
+# No new topics
+# Mistakes come back again later
+
+
+# Q1–4
+# Functions
+# Numerical derivatives
+
+# Q5–8
+# Partial derivatives
+# HARD FOCUS:
+# change x only for partial_x
+# change y only for partial_y
+
+# Q9–11
+# Gradient vectors
+# HARD FOCUS:
+# gradient = np.array([partial_x, partial_y])
+# NOT np.dot()
+
+# Q12–14
+# Prediction
+# Loss
+# Loss function
+
+# Q15–17
+# Derivative of loss
+# Positive vs negative gradient
+
+# Q18–19
+# Learning rate
+# Weight updates
+
+# Q20
+# Full mixed gradient-descent update
+
+
+# MAIN WEAK AREAS
+
+# partial_x = change x, keep y fixed
+# partial_y = change y, keep x fixed
+
+# gradient = store partial derivatives together
+# np.array([partial_x, partial_y])
+
+# negative gradient → increase weight
+# positive gradient → decrease weight
+
+# new_weight = weight - learning_rate * gradient

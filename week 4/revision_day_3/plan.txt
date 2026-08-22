@@ -1,0 +1,51 @@
+# WEEK 2 — HARD REVISION
+
+# 20 coding questions
+# One question at a time
+# No hints unless asked
+# No new topics
+# Wrong answers come back later
+
+# Q1–4
+# head()
+# tail()
+# iloc[]
+# row positions
+
+# Q5–7
+# .columns
+# .index
+# .dtypes
+
+# Q8–11
+# Selecting one column
+# Selecting multiple columns
+# products[["product", "stock"]]
+
+# Q12–15
+# iloc[row, column]
+# Boolean filtering
+# Multiple conditions with &
+# sort_values()
+# ascending=False
+
+# Q16–20
+# Missing values
+# isna().sum()
+# duplicated()
+# drop_duplicates()
+# value_counts()
+
+# MAIN WEAK AREAS
+# iloc uses [] NOT ()
+# head = first rows
+# tail = last rows
+# columns / index / dtypes
+# multiple columns need [["col1", "col2"]]
+# filtering uses DataFrame[condition]
+# multiple conditions need (condition1) & (condition2)
+# sort_values(..., ascending=False) = highest to lowest
+# isna().sum() = count missing values
+# duplicated() = identify duplicates
+# drop_duplicates() = remove duplicates
+# value_counts() = count each unique value

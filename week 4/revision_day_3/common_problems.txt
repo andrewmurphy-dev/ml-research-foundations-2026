@@ -1,0 +1,29 @@
+
+
+#remember 
+
+head() --> first 2
+tail() --> last 2
+iloc , uses [] brackets
+
+what do square brackets mean in pandas?
+
+In pandas, they are often used to select something by position or name.
+
+data type for each column , 
+
+
+
+print(products["product"]["stock"])
+
+this is wrong 
+
+print(products[["product", "stock"]])
+
+For multiple columns, put the column names inside a list:
+
+iloc uses number positions, not column names.
+
+print(products.iloc[0, 1])
+
+row position 0, column position 1

@@ -1,0 +1,48 @@
+# WEEK 2 — PANDAS REVISION PLAN
+
+# 20 questions total
+# One question at a time
+# No hints unless asked
+# No new topics
+# Mistakes come back again later
+
+# Q1–4
+# head()
+# tail()
+# iloc[]
+# selecting rows by position
+
+# Q5–7
+# .columns
+# .index
+# .dtypes
+
+# Q8–11
+# selecting one column
+# selecting multiple columns
+# ["column"]
+# [["column1", "column2"]]
+
+# Q12–15
+# iloc[row, column]
+# Boolean filtering
+# multiple conditions with &
+# sort_values()
+
+# Q16–20
+# isna().sum()
+# duplicated()
+# drop_duplicates()
+# value_counts()
+# final mixed pandas question
+
+# HARD FOCUS
+# iloc uses []
+# head = first rows
+# tail = last rows
+# columns / index / dtypes
+# multiple columns need double brackets
+# filtering = products[condition]
+# multiple conditions need () & ()
+# ascending=False = highest to lowest
+

@@ -1,0 +1,18 @@
+print(products[products["price"] > 50])
+
+
+this seems confusing for u ! 
+
+
+we use boolean filtering ! 
+
+Think:
+
+products["price"] > 50
+
+= gives True / False
+
+products[condition]
+
+= gives only the rows where the condition is True
+

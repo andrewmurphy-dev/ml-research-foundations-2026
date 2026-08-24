@@ -1,0 +1,62 @@
+#Train / validation / test split
+
+#We usually do not train on all the data.
+
+#We split it:
+
+#training data   → model learns from this
+#validation data → we check/tune the model
+#test data       → final check on unseen data
+
+
+
+
+#what is Baseline?
+
+#A baseline is a very simple prediction we use as a minimum standard.
+
+#minimum standard, I mean:
+
+#the basic level of performance your real model should at least beat.
+
+
+
+By **minimum standard**, I mean:
+
+> the **basic level of performance your real model should at least beat**.
+
+
+
+
+Example:
+
+
+baseline prediction:
+always predict 50
+
+
+Suppose that simple rule gets an average error of:
+
+
+20
+
+
+Then your ML model should ideally get:
+
+
+error < 20
+
+
+If your ML model gets an error of:
+
+
+25
+
+
+then it is **worse than the simple baseline**.
+
+So think of baseline as:
+
+> **the bar to beat**
+
+If your model cannot beat that bar, the extra complexity probably is not helping.

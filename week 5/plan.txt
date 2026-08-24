@@ -1,0 +1,5 @@
+What is supervised learning?
+What are X and y?
+What does training mean?
+Why do we split data?
+What is a baseline?

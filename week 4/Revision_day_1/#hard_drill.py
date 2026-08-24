@@ -1,3 +1,16 @@
+
+#rng.choice()
+#→ pick values FROM data you already have
+
+
+#rng.normal()
+#→ generate NEW random values from a normal distribution
+
+
+
+
+
+
 #question 1 
 
 

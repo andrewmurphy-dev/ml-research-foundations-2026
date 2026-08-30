@@ -1,0 +1,32 @@
+#what is predict()?
+
+model.predict([[5]])
+
+
+means:
+
+use what the model learned to predict the answer for a new input.
+
+
+fit()     = learn
+predict() = use what was learned
+
+full example 
+
+
+from sklearn.linear_model import LinearRegression
+import numpy as np
+
+X = np.array([[1], [2], [3], [4]])
+y = np.array([10, 20, 30, 40])
+
+model = LinearRegression()
+
+model.fit(X, y)
+
+prediction = model.predict([[5]])
+
+print(prediction)
+
+
+predict() = use that learned relationship on new data

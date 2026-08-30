@@ -1,0 +1,10 @@
+# DAY 2 — MODEL TRAINING
+
+1. Linear regression
+2. fit()
+3. predict()
+4. coefficients
+5. loss
+6. Logistic regression
+7. Coding practice
+8. Mixed review

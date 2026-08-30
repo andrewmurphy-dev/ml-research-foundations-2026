@@ -1,0 +1,38 @@
+#coefficients 
+
+after fit() linear regression learns numbers that describe the relationship 
+
+what is it !??
+
+it tells you how much the prediction changes when that input increases by 1.
+
+
+the intercept is the models starting prediciton when X = 0
+
+
+
+for example 
+
+print(model.coef_)
+print(model.intercept_)
+
+
+think of it like ! 
+
+prediction = input × coefficient + intercept
+
+#remember u multiply anyhting by 0 you get 0 
+
+
+confusion the coefficients ! 
+
+for example 
+
+coefficient = 10
+intercept = 5
+
+X = 0 → prediction = 5
+X = 1 → prediction = 15
+X = 2 → prediction = 25
+X = 3 → prediction = 35
+

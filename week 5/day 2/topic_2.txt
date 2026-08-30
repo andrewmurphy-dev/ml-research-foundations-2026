@@ -1,0 +1,25 @@
+#what is fit()?
+
+means:
+
+train the model using X and the correct answers y.
+
+
+
+#for example 
+import numpy as np
+
+X = np.array([[1], [2], [3], [4]])
+y = np.array([10, 20, 30, 40])
+
+model.fit(X, y)
+
+
+#the model looks at 
+
+1 → 10
+2 → 20
+3 → 30
+4 → 40
+
+and learns the relationship

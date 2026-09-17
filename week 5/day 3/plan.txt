@@ -1,0 +1,30 @@
+so remember 
+
+
+loss tells us how wrong the model prediction is !
+
+
+formula
+
+loss = (prediction = actual) ** 2
+
+
+small loss = prediction is closer to correct
+large loss = prediction is more wrong
+
+
+linear regression --> this predicts a number 
+
+logistic regression predicts a class category 
+
+
+plan for day 3
+
+
+DAY 3
+1. K-Nearest Neighbors (KNN)
+2. Distance
+3. Why scaling matters
+4. Coding practice
+5. Mixed review
+

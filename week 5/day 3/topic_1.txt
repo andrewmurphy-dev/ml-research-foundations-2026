@@ -1,0 +1,35 @@
+#k nearest neighbors 
+
+
+
+#this predicts based on the most simialr nearby examples 
+
+new point
+↓
+look at the closest known points
+↓
+use those neighbors to make the prediction
+
+
+for example
+
+
+height   weight   class
+170      65       A
+172      67       A
+190      95       B
+192      98       B
+
+
+
+if a new person is 171cm, 66kg
+
+KNN would look at the nearest examples and probably predict:
+
+class A
+
+
+
+
+
+

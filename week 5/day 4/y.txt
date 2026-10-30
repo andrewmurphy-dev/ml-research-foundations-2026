@@ -1,0 +1,37 @@
+## What is y?
+
+y is the **target**, also called the **labels**.
+It's the **true answer** for each row of X — recorded in the data, not guessed.
+
+| size (m²) | rooms | → price |
+|-----------|-------|---------|
+| 80        | 3     | → 200k  |
+| 120       | 4     | → 310k  |
+
+- Left side (size, rooms) = **X**, the inputs / features
+- Right side (price) = **y**, the true answers
+
+Each row of X is paired with exactly one value in y.
+Row 0 of X goes with y[0], row 1 with y[1], and so on.
+→ That's why X and y must have the **same number of rows**.
+
+## y vs prediction
+
+- **y** = the true answer (the answer key)
+- **prediction** (often called `y_pred`) = the model's guess
+- Later: train on X_train + y_train → guess on X_test → compare guesses to y_test
+
+## Classification vs regression
+
+- **Regression**: y is a number → e.g. house price
+- **Classification**: y is a category, stored as numbers
+  - Spam? 1 = spam, 0 = not spam
+  - Tumor malignant? 1 = yes, 0 = no
+- **Binary classification** = only two classes (0 and 1)
+
+## Today's practice (Day 4)
+
+- My y is 0s and 1s → shaped like a **binary classification** problem
+- But it's **fake practice data** — it doesn't mean anything
+- No model, no predicting today — just learning to **split** the data
+- train_test_split works the same for classification or regression

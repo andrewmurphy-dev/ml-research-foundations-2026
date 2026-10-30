@@ -1,0 +1,50 @@
+#what is this  sklearn.model_selection?
+
+sklearn = the library 
+.model_selection = submodule from the library 
+dot means inside 
+
+
+#what does it do though?
+
+preparing and evaluating models, like splitting data or testing a model on different chunks
+
+
+sklearn/                 ← the whole library
+├── model_selection/     ← tools for splitting & evaluating
+│   └── train_test_split ← the function you need
+├── linear_model/        ← models like LinearRegression
+└── datasets/            ← sample datasets
+
+
+
+so how would one get this information about what submodules are available in the library and tools and or functions?
+
+The scikit-learn API Reference lists every submodule and everything inside it: https://scikit-learn.org/stable/api/index.html
+
+
+why is it called API??
+
+API stands for Application Programming Interface. It just means “the set of things a piece of software lets you use, and how you use them.”
+
+
+so theres two APIs
+
+WEB API
+
+Library API 
+
+These are the functions, classes, and submodules a library offers you, and the rules for using them: what arguments they take and what they return. No internet, no server. Everything runs locally in your environment.
+
+
+
+Two small word fixes so your mental picture stays accurate:
+
+1. Nothing gets “eaten.” No rows disappear. The 50% is set aside as the test set, and the other 50% becomes the train set. Add them back together and you always get your original 10.
+
+2. Call it “rows,” not “x axis.” “x axis” gets confusing because your data is also called X. In NumPy terms:
+
+rows = axis 0, the first number in the shape: (10, 2)
+columns = axis 1, the second number: (10, 2)
+
+So train_test_split divides axis 0 (rows) and never touches axis 1 (columns).

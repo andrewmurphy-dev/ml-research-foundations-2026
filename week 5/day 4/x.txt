@@ -1,0 +1,6 @@
+what is X?
+
+this is input data , also called features it is whatthe odel looks at to make a prediction 
+
+Each row is one example (a sample).
+Each column is one piece of information about that example (a feature).

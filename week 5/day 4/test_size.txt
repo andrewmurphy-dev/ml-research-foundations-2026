@@ -1,0 +1,38 @@
+when using 
+
+train_test_split
+
+and you do 
+
+
+
+X_train, X_test, y_train, y_test = train_test_split(X, y)
+
+
+the test size is default is 3 / 10 
+
+
+so lets use this test size 0.2, 0.5
+
+and a whole number , 4
+
+
+but you cant have a decimal of test size no!?
+
+
+so when you do test_size = 0.2 
+
+that is 20% and the model eats the rest , the 80 % 
+
+
+
+Two small word fixes so your mental picture stays accurate:
+
+1. Nothing gets “eaten.” No rows disappear. The 50% is set aside as the test set, and the other 50% becomes the train set. Add them back together and you always get your original 10.
+
+2. Call it “rows,” not “x axis.” “x axis” gets confusing because your data is also called X. In NumPy terms:
+
+rows = axis 0, the first number in the shape: (10, 2)
+columns = axis 1, the second number: (10, 2)
+
+So train_test_split divides axis 0 (rows) and never touches axis 1 (columns).

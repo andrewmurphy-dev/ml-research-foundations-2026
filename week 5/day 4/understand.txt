@@ -1,0 +1,67 @@
+## Day 4 — train_test_split
+
+### What it does
+- Takes X and y (all 10 rows)
+- Shuffles the rows (X and y stay paired)
+- Cuts them into 2 piles: TRAIN and TEST
+- Every row goes into exactly one pile
+
+### The 4 results (always this order)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=...)
+
+### How to predict shapes
+- Always start from the original 10 rows
+- test rows  = 10 × test_size
+- train rows = 10 − test rows
+- Columns never change (still 2)
+- X and y in the same pile have the same rows
+
+### Results
+| test_size | train  | test   |
+|-----------|--------|--------|
+| default   | (7, 2) | (3, 2) |
+| 0.5       | (5, 2) | (5, 2) |
+| 0.2       | (8, 2) | (2, 2) |
+| 4         | (6, 2) | (4, 2) |
+
+### test_size rules
+- Decimal (0.2) = a fraction of the rows (20%)
+- Whole number (4) = exactly that many rows
+- Default = 0.25 (rounds up → 3 test rows)
+
+### Train vs test
+- Train = rows the model learns from
+- Test = rows hidden from the model, used to check it
+
+### Shape vs contents
+- Shape (how many rows) = predictable from test_size
+- Contents (which rows) = random each run
+
+
+
+## random_state
+
+### The problem
+- Without random_state, the shuffle is random every run
+- Shapes stay the same, but WHICH rows land in test changes
+- Example (no random_state, 3 runs, all shape (3, 2)):
+  - run 1 X_test: [6 7] [10 11] [18 19]
+  - run 2 X_test: [8 9] [16 17] [10 11]
+
+### What it does
+- Fixes the shuffle so it's the same every run
+- Same number → same rows every time
+- Different number → different rows (but repeatable)
+- No number → new random shuffle each run
+
+### How to use it
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+### Key points
+- random_state does NOT change shapes, only which rows
+- test_size controls HOW MANY rows go to test
+- random_state controls WHICH rows go to test
+- 42 is just a popular choice; any whole number works
+
+### Why it matters
+- Reproducible: you or anyone else gets the exact same split

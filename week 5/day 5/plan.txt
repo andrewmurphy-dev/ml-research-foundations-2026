@@ -1,0 +1,6 @@
+Train a KNN model on the wine dataset without scaling, and print its accuracy.
+Try StandardScaler on its own. Fit it on the training data only, then transform both train and test.
+Train KNN again with scaled data, and compare the two accuracies.
+Write anything confusing in confusion.txt, then commit and push.
+
+The main thing to learn is that KNN measures distances, so features with big numbers can drown out the small ones. Scaling fixes that. You also learn to fit the scaler on train only, so the test set stays hidden.

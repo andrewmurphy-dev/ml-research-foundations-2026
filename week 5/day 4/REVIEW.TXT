@@ -1,0 +1,22 @@
+## Day 4 — review notes 
+
+### The import line
+from sklearn.model_selection import train_test_split
+- sklearn = the LIBRARY (installed as scikit-learn)
+- model_selection = a SUBMODULE (a folder inside the library)
+- train_test_split = a FUNCTION inside that submodule
+- The dots mean "inside of" → library → submodule → function
+
+### Predicting test_size
+- Multiply TOTAL rows by test_size
+- 10 rows × 0.2 = 2 test rows → train = 10 − 2 = 8
+- Decimal = fraction of rows, whole number = exact row count
+
+### Micro things to remember
+- np.arange(20) = numbers 0 to 19
+- np.array(20) = just the single number 20
+- (10, 2) = 10 rows, 2 columns
+- (10,) = flat list of 10 items
+- Every split starts from the full original data
+- .split() is for text (strings), not lists
+- Functions only use what you pass in

@@ -22,6 +22,7 @@ Rules for every day:
 |-----|----------------|
 | Day 4 | `train_test_split` on a small NumPy dataset. Print shapes of X_train, X_test, y_train, y_test. Change `test_size` and `random_state`, see what changes. |
 | Day 5 | `StandardScaler`: `fit` on train ONLY, `transform` train and test. Run KNN with and without scaling, print accuracy both times. |
+: “Run 1 (no scaling): 0.722 (26/36). Run 2 (scaled): TODO.
 | Day 6 | Metrics: `accuracy_score`, `mean_squared_error`, `confusion_matrix`. Compute MSE by hand with NumPy first, then check with sklearn. |
 | Day 7 | Revision: one file, 20 questions mixing Day 1–6. No notes. |
 

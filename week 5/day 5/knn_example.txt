@@ -1,0 +1,67 @@
+#simple example of KNN
+
+#step 1 
+a shop has 6 paste customers and it already knows it sizes 
+
+
+3 tall and heavy L size 
+3 small and light , s size 
+
+
+#step 2 
+a new customer walks in , he is tall and heavy , but we do not know his size 
+
+
+step 3 
+KNN compares the new customer to all 6 past customers 
+KNN asks how similar their height and weight are to each one 
+
+
+
+#what is k ?
+K is just how many neighbours KNN looks at before it trains and predicts 
+K nearest neighbours. In scikit-learn, you set it with n_neighbors, and if you leave it out, it’s 5 by default 
+
+
+step 4 
+you set k at the start , when you create the model 
+the model uses k later when it predicts 
+Pick the closest few. Say K is 3. KNN keeps the 3 most similar past customers.
+
+
+
+step 5 
+KNN uses Euclidean distances 
+which is just the straight-line distance between two points,
+t's **from the new customer to each past customer*
+
+
+#you technically end up with a list 
+its just ascending order 
+
+you also most importantly need 
+
+you need to know **which customers** they belong to, so you can look up their sizes.
+
+
+
+
+
+
+#understand this 
+
+
+
+we have x data row , but we dont have y label column
+
+
+y is just the label andrew , its the category where the unknown customer fits into 
+
+x is features its data , its a row 
+
+so we are trying to predict the y label 
+
+
+Yes, that’s it. One whole row of X, all 13 measurements for one wine, goes with one label in y.
+
+and the labels are 0, 1, 2

@@ -1,0 +1,6 @@
+## The 4 piles (wine data)
+
+- X_train = lab measurements of the 142 training wines (142 rows, 13 numbers each). The model studies these.
+- y_train = the correct types of those 142 wines (142 entries, each 0, 1 or 2). The model studies these too, so it learns which type goes with which wine.
+- X_test = lab measurements of the 36 hidden wines (36 rows, 13 numbers each). The model only sees these at the end, to make its guesses.
+- y_test = the correct types of those 36 hidden wines (36 entries, each 0, 1 or 2). This is the answer key. The model never sees it; it's only used to mark the guesses.

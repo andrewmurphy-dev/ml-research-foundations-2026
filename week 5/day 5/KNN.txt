@@ -1,0 +1,40 @@
+## KNN — the import and what it does
+
+### The import
+from sklearn.neighbors import KNeighborsClassifier
+
+- Means: bring the KNN model tool into my file
+- sklearn = the LIBRARY (the big toolbox)
+- neighbors = a SUBMODULE (the drawer with KNN tools)
+- KNeighborsClassifier = a CLASS (the tool itself)
+- A class = a blueprint → importing it doesn't make a model yet
+- Classes start with capital letters, functions don't
+
+### What KNN does
+- KNN = K-Nearest Neighbours
+- To guess a new row, it finds the K closest training rows
+- Then it picks the label most of them have (majority vote)
+- Default K = 5 → looks at the 5 closest neighbours
+- Like guessing what someone likes by checking their closest friends
+
+### How "closest" works
+- KNN measures DISTANCE between rows using their numbers
+- Big numbers (like 1000) count more than small ones (like 1)
+- That's why scaling matters → Day 5's main lesson
+
+### The 3 moves
+1. Create → model = KNeighborsClassifier()
+2. Fit → model.fit(X_train, y_train) → KNN just remembers the train rows
+3. Score → model.score(X_test, y_test) → accuracy from 0 to 1
+
+
+
+## What .fit does (KNN)
+
+- .fit = the studying step
+- model.fit(X_train, y_train) → gives the model the 142 training wines and their types
+- For KNN, "memorise" just means it SAVES A COPY of the data inside the model
+- Behind the scenes it's roughly like: self.X = X_train, self.y = y_train
+- No magic → it's just storing data in variables inside the model object
+- Later, KNN measures distances from new wines to these saved wines
+- Other models do real calculations during .fit; KNN just saves the data

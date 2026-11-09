@@ -4,7 +4,7 @@
 from sklearn.datasets import load_wine 
 from sklearn.model_selection import train_test_split 
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.processing import StandardScaler 
+from sklearn.preprocessing import StandardScaler 
 
 X, y = load_wine(return_X_y=True)
 
@@ -89,3 +89,18 @@ X_train_scaled = scaler.transform(X_train)
 #transform does the actual calculation ,(value − column mean) ÷ column std
 
 X_test_scaled = scaler.transform(X_test)
+
+
+
+model_scaled = KNeighborsClassifier()
+
+model_scaled.fit(X_train_scaled, y_train)
+
+
+scaled_test_score = model_scaled.score(X_test_scaled, y_test)
+
+print("Accuracy with scaled:", scaled_test_score)
+
+
+
+#so scaling does change the numbers themselves , and the distances change 

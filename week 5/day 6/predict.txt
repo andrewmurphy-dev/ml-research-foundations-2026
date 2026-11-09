@@ -1,0 +1,5 @@
+.predict() 
+
+this gives u the models guesses without marking them 
+
+

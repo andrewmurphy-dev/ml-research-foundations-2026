@@ -1,0 +1,26 @@
+from sklearn.metrics import confusion_matrix
+
+
+
+
+[[10  0  0]
+ [ 0  9  0]
+ [ 0  0 11]]
+
+
+ its basically reading this 
+
+
+ when u call it based on your y_predcition mdoel
+
+
+
+
+Rows = real labels
+Columns = guessed labels
+Diagonal = correct guesses
+Off the diagonal = mistakes, showing exactly which class got mistaken for which
+
+
+A confusion matrix is just a table of counts.
+

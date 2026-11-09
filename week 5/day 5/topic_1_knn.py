@@ -8,6 +8,8 @@ from sklearn.preprocessing import StandardScaler
 
 X, y = load_wine(return_X_y=True)
 
+#return_X_y=True) this returns the data that u want 
+
 print(X.shape)
 print(y.shape)
 

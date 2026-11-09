@@ -1,0 +1,7 @@
+MSE (mean squared error) measures how far off number predictions are. It’s for regression, like predicting a price, not a category.
+
+
+Formula: average of (real − guess)²
+
+
+3

@@ -1,0 +1,5 @@
+`accuracy_score` compares two lists and tells you **what fraction match**.
+
+You give it the real answers (`y_test`) and the guesses (`y_prediction`). It counts how many positions are the same, divides by the total, and gives you a number from 0 to 1.
+
+It's the "marking" part of `.score`, on its own. `.score` = predict + mark. `accuracy_score` = just mark, using guesses you already made.

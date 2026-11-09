@@ -1,0 +1,15 @@
+A smaller number minus a larger one is always negative:
+
+regression is predictiing a number 
+
+classification is predicting a category 
+
+**Regression** = predicting a **number**.
+
+- Examples: house price, temperature, exam score
+- Measured with **MSE**: how far off the guesses are
+
+**Classification** = predicting a **category**.
+
+- Examples: species 0/1/2, spam or not
+- Measured with **accuracy** and the **confusion matrix**

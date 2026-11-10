@@ -1,0 +1,8 @@
+
+## WEEK 6 — Full ML pipeline on a real dataset
+
+Use `sklearn.datasets.load_iris` and `load_diabetes` (no downloading needed).
+
+| Day | Code you write |
+|-----|----------------|
+| Day 1 | Load dataset → put into pandas DataFrame → `.head()`, `.shape`, `.describe()`, `.isna().sum()` |

@@ -1,0 +1,58 @@
+## .fit is different for each model
+
+### KNN
+- .fit = just SAVES the training data
+- No maths during fit
+- The real work happens at .predict (measuring distances)
+
+### LinearRegression
+- .fit = does REAL MATHS
+- Finds the best weight for each feature + a bias
+- Goal: make X @ w + b as close as possible to y_train
+- Same idea as Week 3 (weights, dot product)
+- .predict is fast: just X @ w + b
+
+### StandardScaler
+- .fit = learns each column's mean and std
+
+### Same word, same idea
+- .fit always = learn from the TRAINING data
+- What "learn" means depends on the tool
+
+## LinearRegression formula
+prediction = w1·x1 + w2·x2 + ... + w10·x10 + b
+
+## What it learned
+- model.coef_ → the weights (one per feature)
+  - big positive → pushes prediction UP
+  - big negative → pushes prediction DOWN
+- model.intercept_ → the bias b (starting point)
+- Trailing _ = something the model LEARNED during .fit
+
+
+
+
+X @ w + b 
+
+so 
+
+
+@ is the numpy symbol for matrix multiplication 
+
+
+
+what is dot product 
+
+this is multiply matching positions , then add everything up 
+
+for example
+
+[2, 3] · [10, 5]
+= (2 × 10) + (3 × 5)
+= 20 + 15
+= 35
+
+
+what is the purpose of the dot product ??
+
+this combines many numbers into one score 

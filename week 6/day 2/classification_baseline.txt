@@ -1,0 +1,24 @@
+## Classification baseline
+
+### What it is
+- The dumbest possible model
+- Ignores the features (X) completely
+- Always guesses the MOST COMMON class from y_train
+
+### Why bother
+- Tells you what "good" means
+- A real model must BEAT the baseline to be worth anything
+- Example: model = 0.80 sounds great, but if baseline = 0.78, the model barely helps
+
+### How (iris)
+1. Find the most common class → y_train.value_counts()
+2. Guess that class for every test flower → np.full(len(y_test), the_class)
+3. Score it → accuracy_score(y_test, guesses)
+
+### What to expect
+- Iris has 3 species in roughly equal numbers
+- Always guessing one → about 1 in 3 right → around 0.33
+
+### Regression version (later)
+- Always guess the MEAN of y_train
+- Score it with MSE

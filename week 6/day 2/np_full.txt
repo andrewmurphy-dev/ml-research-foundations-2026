@@ -1,0 +1,19 @@
+#what does np.full do ?
+
+#this makes an array of a given size , filled with one value repeated 
+
+np.full(5, 1)   # → [1 1 1 1 1]
+np.full(3, 7)   # → [7 7 7]
+
+
+
+how does this relate to guesses 
+
+#predict()
+#seeing what the model predicted before seeing what it got right in comparision to y_test
+
+y_prediction = model.predict(X_test)
+
+print(y_prediction)
+
+

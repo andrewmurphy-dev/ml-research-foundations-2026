@@ -1,0 +1,34 @@
+some row cells have missing values so what do we do when we are preparing in making our X,y values 
+
+
+## Missing values — the order
+
+1. Look → df.isna().sum()
+2. Drop rows with no label (y)
+3. Split X and y
+4. train_test_split
+5. Fill gaps in X → fit on train only
+6. Scale → fit on train only
+7. Train the model
+
+- Exception: KNNImputer → scale first, then fill
+- Rule: look early, fill late (after the split)
+
+## Ways to fill gaps
+- df.dropna() → remove rows (lose data)
+- SimpleImputer(strategy="mean") → fill with column mean
+- KNNImputer() → fill with average of similar rows
+
+## Real data is messy
+- Missing values, duplicates, impossible values, outliers
+- Wrong types, messy categories, wrong labels
+- Lab ECG data → clean RR intervals BEFORE making HRV features
+
+
+what is KNNimputer?
+
+its a sklearn tool that fills missing values using KNN 
+
+for a row with an empty cell 
+
+it finds the k most simillar rows using the columns that arent missing 

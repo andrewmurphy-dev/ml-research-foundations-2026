@@ -1,0 +1,14 @@
+how to know when to use MSE, vs accuracy 
+
+
+Predicting a category → accuracy (plus the confusion matrix)
+Predicting a number → MSE
+
+
+
+Iris: categories → accuracy. Each guess is simply right or wrong. Species 1 is either species 1 or it isn’t. So the natural question is “what fraction did it get right?”, and that’s accuracy.
+
+Diabetes: numbers → MSE. The target is a number like 151 or 75. A guess will almost never be exactly right, but some are close and some are way off:
+
+real 152, guess 150 → great guess
+real 152, guess 60 → terrible guess

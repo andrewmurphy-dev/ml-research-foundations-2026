@@ -1,0 +1,1 @@
+| Day 2 | Split X / y from the DataFrame. `train_test_split`. Baseline (mean for regression, most common class for classification). |

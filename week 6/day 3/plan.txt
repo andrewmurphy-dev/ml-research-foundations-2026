@@ -1,0 +1,3 @@
+Goal: train your first regression model, read what it learned, and check whether it beats the baseline (MSE 5361.5).
+
+

@@ -1,0 +1,13 @@
+what does binary mean?
+
+, in ml , it just means 2 options 
+
+
+binary classification -> predicting one of 2 categories 
+
+usually written as 1(yes) no(0) 
+
+multiclass classification , 
+
+3 or more categories 
+

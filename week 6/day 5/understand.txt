@@ -1,0 +1,38 @@
+#what is a pipeline?
+
+#this is a chain of steps , that runs scaling and the model in the right order 
+
+#for example 
+
+
+#without a pipeline 
+
+
+scaler = StandardScaler()
+scaler.fit(X_train)
+X_train_scaled = scaler.transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+model = KNeighborsClassifier()
+model.fit(X_train_scaled, y_train)
+print(model.score(X_test_scaled, y_test))    # 0.944
+
+
+
+#with a pipeline 
+
+pipe = Pipeline([
+    ("scaler", StandardScaler()),
+    ("model", KNeighborsClassifier())
+])
+
+pipe.fit(X_train, y_train)
+print(pipe.score(X_test, y_test))            # 0.944
+
+
+#so u are using a pipeline classs not making oen 
+
+#class Pipeline: def __init__(self, ...). scikit-learn did that part.
+
+#import it this way 
+from sklearn.pipeline import Pipeline

@@ -1,0 +1,6 @@
+Logistic regression (today, iris)
+
+Predicts a category
+Starts with the same weighted sum, X @ w + b
+Turns it into a probability for each class
+Picks the class with the highest probability

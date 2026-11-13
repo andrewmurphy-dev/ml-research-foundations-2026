@@ -1,0 +1,2 @@
+| Day 5 | `Pipeline([("scaler", StandardScaler()), ("model", KNeighborsClassifier())])` |
+

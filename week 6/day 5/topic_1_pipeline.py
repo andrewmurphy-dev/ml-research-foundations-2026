@@ -23,3 +23,5 @@ pipe.fit(X_train, y_train)
 pipe_accuracy = pipe.score(X_test, y_test)
 
 print(pipe_accuracy)
+
+

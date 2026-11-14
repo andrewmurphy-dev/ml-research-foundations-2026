@@ -1,0 +1,1 @@
+| Day 6 | Mini project: one dataset, 3 models, compare with CV, plot results |

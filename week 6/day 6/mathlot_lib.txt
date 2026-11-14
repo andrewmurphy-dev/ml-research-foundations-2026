@@ -1,0 +1,63 @@
+matplotlib = the library for drawing charts in Python
+
+
+
+.pyplot = the part of it with the simple chart tools (scatter plots, line charts and so on)
+
+
+
+
+
+
+
+## Week 6 Day 6 — Review notes
+
+### matplotlib
+- import matplotlib.pyplot as plt
+- matplotlib = chart library, pyplot = simple chart tools, plt = nickname
+- plt.show() → opens the chart window
+
+### Chart 1: scatter (predicted vs actual, diabetes)
+plt.scatter(y_test, predictions)
+- Each dot = ONE patient
+- Right = actual value, Up = predicted value
+- Red line plt.plot([25, 350], [25, 350], color="red") = perfect guesses
+  - On the line → perfect
+  - Above → guessed too high
+  - Below → guessed too low
+- Read it: how close is the cloud to the red line?
+- Result: moderate positive correlation
+  - Too high on low values, too low on high values → pulls guesses to the middle
+
+### Correlation
+- How much two things move together, from -1 to +1
+- Positive → both go up together
+- Negative → one up, one down
+- 0 → no pattern
+- Correlation ≠ causation
+
+### R² (regression .score)
+- 1.0 = perfect, 0 = no better than guessing the mean
+- Diabetes linear regression ≈ 0.45
+
+### Chart 2: line (accuracy vs K, wine + pipeline)
+for k in range(1, 21):
+    pipe = Pipeline([("scaler", StandardScaler()),
+                     ("model", KNeighborsClassifier(n_neighbors=k))])
+    pipe.fit(X_train, y_train)
+    scores.append(pipe.score(X_test, y_test))
+plt.plot(range(1, 21), scores, marker="o")
+
+- Each dot = ONE K value
+- Bottom = setting I chose (K), Side = result (accuracy)
+- Read it LEFT → RIGHT: what happens as K changes?
+- marker="o" → shows the dots (plt.plot hides them by default)
+
+### Scatter vs line
+- Scatter → "how do two things compare?" → look at the cloud
+- Line → "what happens as I change something?" → follow left to right
+
+### Lessons
+- CHECK THE AXIS: zoomed axis (0.945–0.970) makes tiny changes look huge
+- Every jump was just ONE wine (34/36 vs 35/36)
+- One small test set can't pick the best K → cross-validation (Week 8)

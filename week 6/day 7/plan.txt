@@ -1,0 +1,4 @@
+Burst 1: Week 5 concepts (questions 1–10)
+Burst 2: Week 5 code from an empty file (wine)
+Burst 3: Week 6 concepts (questions 11–20)
+Burst 4: Week 6 timed challenge (diabetes + wine pipeline)

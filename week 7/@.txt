@@ -1,0 +1,50 @@
+what is @?
+
+this is the dot product!
+
+
+in maths , product means result of multiplying 
+
+
+
+so for example super easy 
+
+
+
+import numpy as np
+
+X = np.array([[2, 3],
+              [4, 1]])
+
+
+
+w = np.array([10, 5])
+
+
+2 * 10 = 20
+3 * 5 = 15 
+
+
+4 * 10 = 40
+1 * 5 = 5
+
+
+
+
+= 
+
+[20, 15]
+[40, 5]
+
+you multiply by corrisponding postions 
+
+
+so @ goes one step further 
+
+
+after u multiply you add them up 
+
+20 + 15 = 35
+40 + 5 = 45
+
+[35, 45]

@@ -1,0 +1,14 @@
+rememebr if u want to import something 
+
+from sklearn.<submodule> import <ClassName>
+
+
+
+from sklearn.datasets import load_wine 
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNNeighborsClassifier
+
+
+standard scalaer lives in pre processing 
+
+same with pipeline 

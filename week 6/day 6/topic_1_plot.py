@@ -66,4 +66,3 @@ plt.show()
 
 #so u have a point on the grapgh , u look at the y axis , compare the y axis number (prediction) to the x axis (acutual and see if they are aligned in numbers or not 
 
-)

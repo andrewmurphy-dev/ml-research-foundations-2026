@@ -1,0 +1,50 @@
+# NumPy cheat sheet
+import numpy as np
+
+## Make arrays
+np.array([1, 2, 3])          → turn a list into an array
+np.arange(5)                 → [0 1 2 3 4]  (a range of numbers)
+np.full(3, 7)                → [7 7 7]      (one value repeated)
+np.zeros(3) / np.ones(3)     → [0. 0. 0.] / [1. 1. 1.]
+arr.reshape(2, 3)            → change shape (total items must match)
+
+## Look at arrays
+arr.shape                    → (rows, cols) — e.g. (10, 2) or (10,)
+len(arr)                     → how many items (along axis 0)
+arr[0]                       → first item
+arr[:5]                      → first 5 items
+arr[1:]                      → everything except the first
+arr[-1]                      → last item
+
+## Quick stats
+arr.mean()                   → average
+arr.std()                    → standard deviation (spread)
+arr.min() / arr.max()        → smallest / biggest
+arr.sum()                    → add them all up
+np.sqrt(x)                   → square root
+
+## Maths
+a + b, a - b, a * b, a / b   → item by item (matching positions)
+arr / 128                    → divide every item at once
+a ** 2                       → square every item
+X @ w                        → dot product per row (multiply, then add)
+
+## True / False (boolean masks)
+arr > 0.5                    → [True False ...] one per item
+arr[arr > 0.5]               → keep only the Trues
+mask.sum()                   → how many Trues
+mask.mean()                  → fraction of Trues (0 to 1)
+a | b                        → True if EITHER is True (or)
+a & b                        → True if BOTH are True (and)
+np.isin(arr, [list])         → is each item in the list? → True/False
+
+## Heart data favourites
+np.diff(arr)                 → each item minus the one before (beats → RR)
+np.argsort(arr)              → POSITIONS in sorted order (smallest first)
+np.sort(arr)                 → the values sorted
+np.unique(arr, return_counts=True) → each unique value + how many times
+
+## Remember
+- np.something(...)  → library function (np left of the dot)
+- arr.something()    → method (your array left of the dot)
+- Methods need () to run: arr.mean()  not  arr.mean
